@@ -21,7 +21,7 @@ int main(int argc,char* argv[])
         return 2;
     }
 
-    // if process is cihld then take n/2 values of arr
+    // if process is child then take n/2 values of arr
     // else if process is parent then take later half 
     // of values.
 

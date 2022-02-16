@@ -12,8 +12,8 @@ int main(int argc,char *argv[])
     // NOTE : p[0] -> read 
     //        p[1] -> write
     //          Writes to => Read By
-    int p1[2]; //C => P
-    int p2[2]; //P =>C
+    int p1[2]; //C => P means Parent reads from child
+    int p2[2]; //P =>C means Child reads from Parent
 
     if(pipe(p1) == -1){ return 1;}
     if(pipe(p2) == -1){ return 1; }
@@ -34,7 +34,7 @@ int main(int argc,char *argv[])
         x*=4;
 
         if(write(p1[1],&x,sizeof(x)) == -1){ return 4;}
-        printf("Wrote %d \n",x);
+        printf("Wrote %d\n",x);
 
         close(p1[1]);
         close(p2[0]);

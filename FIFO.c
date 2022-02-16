@@ -18,7 +18,6 @@ int main(int argc,char * argv[])
     
     //the below snippet will create a file named myfifo
     // in the same directory 
-
     //mkfifo returns -1 if it is not able to create the file
     // else returns 0 means everything is fine
     //here EEXIST tells that 

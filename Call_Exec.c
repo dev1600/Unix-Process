@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(int argc,char* argv[]){
+int main(){
 
     char *args[]={"./EXEC",'a',NULL};
     execvp(args[0],args);

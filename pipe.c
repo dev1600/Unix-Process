@@ -28,7 +28,7 @@ int main(int argc,char* argv[])
         int x;
         printf("Input a no: ");
         scanf("%d",&x);
-        //below takes 2parameters
+        //below takes 3 parameters
         //({location were to write the data,},
         // where in the memory to write the data,
         // size of data to be read)
